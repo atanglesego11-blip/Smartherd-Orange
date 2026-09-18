@@ -1,0 +1,12 @@
+# Core pipeline
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+matplotlib>=3.8
+
+# Model. CPU wheels are fine; there is no GPU anywhere in this project.
+torch>=2.2
+
+# Only needed for the Proteus serial bridge (feed / read modes).
+# The `replay` mode runs without it.
+pyserial>=3.5

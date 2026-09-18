@@ -1,0 +1,43 @@
+{
+  "windows": 40140,
+  "animals": 60,
+  "days": 14,
+  "window_samples": 24,
+  "stride": 6,
+  "sample_seconds": 300,
+  "seed": 42,
+  "channels": [
+    "speed_ms",
+    "step_m",
+    "turn_rad",
+    "herd_dist_m",
+    "fence_dist_m",
+    "temp_c",
+    "hr_bpm",
+    "activity_idx",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "classes": [
+    "grazing",
+    "resting",
+    "illness_suspect",
+    "theft_suspect",
+    "predator_flight"
+  ],
+  "class_distribution": {
+    "grazing": 11717,
+    "resting": 23168,
+    "illness_suspect": 4404,
+    "theft_suspect": 382,
+    "predator_flight": 469
+  },
+  "synthetic": true,
+  "confounders": [
+    "midday shade rest during grazing hours",
+    "legitimate herd drives (dip tank / camp move)",
+    "subclinical illness episodes with little or no fever",
+    "variable herd-lag tendency in sick animals"
+  ],
+  "herd_drive_samples": 101
+}
